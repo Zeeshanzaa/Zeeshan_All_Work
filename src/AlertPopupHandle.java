@@ -11,7 +11,7 @@ public class AlertPopupHandle {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.rediff.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[@id=\"queryTop\"]/input")).click();  //clicking on search button
+		driver.findElement(By.xpath("(//input[@class='newsrchbtn'])[2]")).click();  //clicking on search button
 		Thread.sleep(3000);                     //after click on search it will wait for 3sec and then handle or accept pop up 
 		
 		
